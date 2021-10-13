@@ -1,7 +1,7 @@
 const findSum = function(array) {
   sum = array.reduce((a, b) => {
     return a + b;
-  })
+  });
   return sum;
 };
 const numbers = [2, 4, 6];
@@ -16,15 +16,15 @@ const findFrequency = function(array) {
       const compValue = array[n];
       if (value === compValue) {
         frequency++;
-      }
-    }
-    freqMap.push([frequency, value])
-  }
-  freqMap.sort()
+      };
+    };
+    freqMap.push([frequency, value]);
+  };
+  freqMap.sort();
   const most = freqMap.slice(-1)[0];
   const least = freqMap.slice()[0];
   return `most: '${most.slice(-1)[0]}' least: '${least.slice(-1)[0]}'`
-}
+};
 //console.log(findFrequency(['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd']));
 
 const isPalindrome = (str) => {
@@ -36,7 +36,7 @@ const isPalindrome = (str) => {
     return true;
   } else {
     return false;
-  }
+  };
 };
 //console.log(isPalindrome('canal'));
 //console.log(isPalindrome('Ana'));
@@ -94,7 +94,7 @@ const scoreScrabble = function(str) {
       score += 10;
     };
   };
-  return score
+  return score;
 };
 //console.log(scoreScrabble('hello'))
 //console.log(scoreScrabble('quiet'))
